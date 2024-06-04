@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons, #confirmSection {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: green;
+    color: white;
+}
+
+button.inactive {
+    background-color: purple;
+    color: white;
+    cursor: not-allowed;
+}
+
+button#showTableButton {
+    background-color: lightgreen;
+}
+
+button#hideTableButton {
+    background-color: red;
+    color: white;
+}
+
+button#clearSortButton {
+    background-color: red;
+    color: white;
+    margin-top: 20px;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    cursor: pointer;
+}
+
+th.sorted {
+    background-color: lightpink;
+}

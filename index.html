@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервіс для завантаження даних</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Сервіс для завантаження даних з ресурсу {JSON} Placeholder</h1>
+        <input type="text" id="urlInput" placeholder="ENTER URL">
+        <div class="buttons">
+            <button id="loadDataButton" class="active">ЗАВАНТАЖИТИ ДАНІ</button>
+            <button id="clearButton" class="inactive" disabled>ОЧИСТИТИ</button>
+        </div>
+        <div id="message"></div>
+        <div id="confirmSection" class="hidden">
+            <p>Відобразити Ваш варіант таблиці?</p>
+            <button id="showTableButton">ТАК</button>
+            <button id="hideTableButton">НІ</button>
+        </div>
+        <div id="tableSection" class="hidden">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th id="idHeader">ID</th>
+                        <th id="nameHeader">NAME</th>
+                        <th id="zipcodeHeader">ZIPCODE</th>
+                        <th id="cityHeader">CITY</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="clearSortButton">ОЧИСТИТИ СОРТУВАННЯ</button>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
